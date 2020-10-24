@@ -1,0 +1,7 @@
+The task was one of finding the maximum goal scorer in a scenario where a score or miss is determined by the energy  of each player.
+
+We want to measure the starting energy of each player as a given input, and update that property dependent on outcome. So I wrote the function to decrement the strikers’ energies if they score a goal and decrement the goalkeepers energy if a goal is saved. 
+
+Whether a goal is scored or saved is determined by whether or not the striker’s energy level is a factor of the goal keepers’. In the event of both striker’s able to score, Lohia is always favoured as the problem states.
+
+The game is to end when the goalkeeper’s energy is at 1, so I began with a while statement for the function. The solution was tested manually, in the GeeksForGeeks environment and also with a unit test. (Note: I found the implementation of a unit test difficult due to the inclusion of user inputs for the energy levels and test cases, so I discovered input mocking and used this.) Outputs are correct for all variations I tested and those that were included on the GeeksForGeeks site.
